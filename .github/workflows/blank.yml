@@ -36,4 +36,5 @@ jobs:
         run: wget -O - https://raw.githubusercontent.com/friendlyarm/build-env-on-ubuntu-bionic/master/install.sh | bash
       - name: auto complie
         run: |
+          cd friendlywrt-rk3328
           ./build.sh nanopi_r2s.mk
